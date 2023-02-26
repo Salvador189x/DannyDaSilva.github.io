@@ -1,0 +1,178 @@
+
+footer{
+    margin-top: 50px;
+    width: 100vw;
+    height: 300px;
+    background-color:#151212;
+    position: relative;
+}
+.content-logo-footer{
+    top: 50px;
+    width: 331px;
+    height: 100px;
+    right: 75px;
+    position: absolute;
+}
+.content-logo-footer img{
+    width: 100%;
+    height: 100%;
+}
+.informacoes-footer{
+    top: 25px;
+    width: 250px;
+    left: 100px;
+    position: absolute;
+}
+.informacoes-footer h2{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2px;
+    color: #efefef;
+    font-weight: 500;
+    border-bottom: 1px solid #efefef;
+}
+.informacoes-footer p{
+    color: #efefef;
+    padding: 15px 0;
+}
+.informacoes-footer a{
+    color: #efefef;
+}
+.informacoes-footer a:hover{
+    color: #c52f34;
+}
+.ubicacao-footer{
+    font-size: 12px;
+}
+.email-footer{
+    font-size: 14px;
+}
+.redes-footer{
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    position: absolute;
+}
+.red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-top: 25px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.redes-footer h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #efefef;
+}
+.redes-footer{
+    display: block;
+}
+
+.redes-footer a{
+    color: #efefef;
+}
+.redes-footer a:hover{
+    color: #c52f34;
+}
+.icone-informacoes{
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+#icone-email{
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.content-copyright{
+    width: 100%;
+    bottom: 0;
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
+@media screen and (max-width:1170px){
+    footer{
+        height: 450px;
+    }  
+    .content-logo-footer{
+        top: auto;
+        right: auto;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .redes-footer{
+        top: 25px;
+        left: auto;
+        right: 100px;
+        transform: translateX(0);
+        width: 250px;
+        position: absolute;
+    }
+}
+@media screen and (max-width:750px){
+    .informacoes-footer{
+        left: 50px;
+    }
+    .redes-footer{
+        right: 50px;
+        width: 250px;
+    }
+    .informacoes-footer h2{
+        font-size: 23px;
+    }
+    .ubicacao-footer{
+        font-size: 10px;
+    }
+    .email-footer{
+        font-size: 12px;
+    }
+    .red-social a{
+        width: 35px;
+        height: 35px;
+        margin-top: 35px;
+        line-height: 35px;
+    }
+    .redes-footer h2{
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:630px){
+    footer{
+        height: 650px;
+    }  
+    .content-logo-footer{
+        top: 25px;
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .informacoes-footer{
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .redes-footer{
+        top: 425px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+}
+@media screen and (max-width:400px){
+    .content-logo-footer{
+        width: 290px;
+        height: 80px;
+    }
+}
+

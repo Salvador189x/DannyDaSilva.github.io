@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu{
+    width: 100vw;
+    height: 100px;
+    background-color:#151212;
+    position: relative;
+    z-index: 1000;
+}
+.content-img-menu{
+    margin-top: 10px;
+    margin-left: 50px;
+    height: 80px;
+    position: absolute;
+}
+.content-img-menu img{
+    width: 100%;
+    height: 100%;
+}
+header ul{
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    position: absolute;
+}
+header ul li{
+    font-size: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+header ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+}
+header ul li a:hover{
+    color: #c52f34;
+}
+.inicio-menu{
+    text-decoration: underline #c52f34;
+}
+#icone-municipios{
+    margin-right: 0px;
+    position: absolute;
+}
+header ul li:hover .lista-municipios{
+    display: block;
+    z-index: 1;
+}
+.servicios-menu{
+    position: relative;
+}
+#contacto-menu{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #151212;
+    background-color:#2c64bc;
+}
+#contacto-menu:hover{
+    color: #fff;
+}
+#menu-responsive{
+    display: none;
+}
+#check-menu{
+    display: none;
+}
+@media screen and (max-width:1030px) {
+    #menu_pestanas{
+        top: -1000%;
+        width: 500px;
+        text-align: center;
+        height: 350px;
+        right: 150px;
+        display: inline-block;
+        background-color:#151212;
+        position: absolute;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        transition: .6s;
+        z-index: 100;
+    }
+    #menu-responsive{
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 50px;
+        color: #fff;
+        right: 50px;
+        display: flex;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1000;        
+    }
+    header ul li{
+        font-size: 25px;
+        padding: 20px;
+    }
+    #check-menu:checked ~ #menu_pestanas{
+        top: 175px;
+        display: block !important;
+        transition: .6s;
+    }
+}
+@media screen and (max-width:750px){
+    #menu_pestanas{
+        right: 0;
+        width: 300px;
+    }
+    #check-menu:checked ~ #menu_pestanas{
+        top: 274px;
+        right: 0;
+    }
+}
+@media screen and (max-width:480px){
+    .menu{
+        height: 200px;
+    }
+    #check-menu:checked ~ #menu_pestanas{
+        top: 374px;
+    }
+    #menu-responsive{
+        top: auto;
+        transform: translate(0);
+        bottom: 25px;
+        font-size: 50px;
+        right: 50px;      
+    }
+    .content-img-menu{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:400px){
+    .content-img-menu{
+        margin-top: 15px;
+        height: 70px;
+        margin-left: 20px;
+    }
+}
+
+
